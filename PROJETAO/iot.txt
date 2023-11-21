@@ -1,0 +1,13 @@
+IOT
+1-Quarto
+1.1-Lampada
+1.1-Porta
+
+2-Cozinha
+2.1-Lampada
+2.2-Tomada p/ controle de uma sanduicheira
+c/ bzz e potenciometro c/ Led
+2.3-Temp c/ bzz
+
+3-Garagem
+3.1-Portao

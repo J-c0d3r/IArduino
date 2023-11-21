@@ -1,0 +1,5 @@
+CozinhaLamp(ReleL)7
+CozinhaSand(ReleS)2
+QuartoLamp(ReleL1)8
+GaragemPortao(MotorG)A0
+QuartoPorta(MotorP)A1

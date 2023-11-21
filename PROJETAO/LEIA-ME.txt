@@ -1,0 +1,42 @@
+IOT
+
+Vou começar pelas variaveis. A intuição que usei para criar elas é:
+
+"O nome do componente do arduino" + "A primeira letra do objeto a que me refiro"
+
+Exemplo: 
+
+ReleLC(Rele+Lampada+Cozinha)
+ReleLQ(Rele+Lampada+Quarto)
+ReleS(Rele+Sanduicheira)
+LedE(Led+Emergencia)
+Bot(Botao)
+Bzz(Buzzer)
+POT(Potenciometro - este irá receber a porta)
+pot(este irá receber o valor do POT)
+pot0(variavel para travar quando o ReleS estiver ligado)
+Temp(Temperatura)
+esco(escolha - usado para pegar a escolha feita pelo potenciometro '1' '3' '5' '7')
+tempo(irá receber o tempo que o ReleS deverá permanecer acesso)
+atual(irá pegar o exato tempo que o Bot foi pressionado)
+fim(ficará pegando o tempo que está em execução)
+
+--------------------------
+
+O que queremos fazer é:
+
+Os Reles(ReleLQ, ReleLC) possam ser acionados com o celular.
+
+Os motores(MotorG, MotorP) possam ser acionados com o celular.
+
+O ReleS possa ser acionado tanto pelo celular quanto pelo potenciometro e botao. E quando um for acionado, o outro permanece 'desligado' até acabar a contagem que foi escolhida pelo usuário. O objetivo é simular o acionamento pela distancia(celular) e o acionamento perto(potenciometro e botao).
+
+O sensor de temperatura ficará analisando a temperatura constantemente até o momento que a temperatura estiver acima de 45.5ºC, quando ultrapassar esse valor, o Bzz deverá ser acionado e o LedE piscado. Obs: o usuário não terá controle disso.
+
+---------------------------------------
+O que está funcionando?
+
+Quando não tem o EthernetShield o código funciona por completo.
+
+Quando tem o EthernetShield o código funciona sem o LCD(e os componentes ligado a ele: POT e Bot), sem o sensor de temperatura(e os componentes ligado a ele: Bzz, LedE).
+
